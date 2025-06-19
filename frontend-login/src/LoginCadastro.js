@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import "./css/login-cadastro/styles.css";
+
+
 
 function LoginCadastro({ onLoginSuccess }) {
     const [form, setForm] = useState("cadastro");
