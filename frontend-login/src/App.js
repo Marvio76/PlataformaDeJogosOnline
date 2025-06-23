@@ -6,13 +6,9 @@ function App() {
   const [logado, setLogado] = useState(false);
 
   return (
-    <>
-      {logado ? (
-        <Jogos />
-      ) : (
-        <LoginCadastro onLoginSuccess={() => setLogado(true)} />
-      )}
-    </>
+    <div>
+      {logado ? <Jogos /> : <LoginCadastro onLoginSuccess={() => setLogado(true)} />}
+    </div>
   );
 }
 
